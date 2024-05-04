@@ -1,6 +1,6 @@
 
 [tool.poetry]
-name = "[your-repo-name]"
+name = "[anime-ranking]"
 version = "0.1.0"
 description = "DS Repo Template"
 authors = ["Matt Batacan <mattbatacan@gmail.com>"]
