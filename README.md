@@ -1,3 +1,4 @@
+### 🚧 Under construction 🚧
 # anime-ranking-app
 Feature 1: NLP
 - figure out pulling episode reviews data for one anime (one piece)
@@ -10,14 +11,6 @@ Feature 2: Reccomendations
 - implement a reccomender based on a user's anime list
 - possible learn to rank implementatiopn
 
-
-tech stack
-python
-django
-sqlite
-elastic search?
-
-🚧 Under construction 🚧
 
 ## Quick Start
 
