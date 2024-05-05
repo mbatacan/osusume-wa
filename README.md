@@ -3,7 +3,7 @@ Feature 1: NLP
 - figure out pulling episode reviews data for one anime (one piece)
 - perform sentiment analysis on reviews
 - LLM to generate overall sentiment on episode
-- Generate a "stock price" rating of the anime based on the episodes
+- Generate a episode success metric of the anime episodes
 
 Feature 2: Reccomendations
 - save small database of seasonal animes
