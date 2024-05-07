@@ -216,3 +216,29 @@ df_sample
 # %%
 df_sample.to_csv('../data/one_piece_episode_sentiments.csv', index=False)
 # %%
+response = requests.get('https://myanimelist.net/anime/52991/Sousou_no_Frieren/episode')
+response.raise_for_status()
+
+# %%
+base_url = 'https://myanimelist.net/anime/9253/Steins_Gate/episode'
+episode_info = get_episode_info(base_url)
+print(episode_info)
+# %% df_comments view
+df_comments = pd.DataFrame(comments, columns=['comment'])
+df_comments.head()
+# %% data frame of forum links with episode number and title
+df_episode_info = pd.DataFrame(
+    {
+        'episode_num': np.arange(1, len(episode_info) + 1),
+        'episode_title': [title for title, _, _ in episode_info],
+        'poll_vote': [vote for _, _, vote in episode_info],
+        'forum_link': [link for _, link, _ in episode_info],
+    }
+)
+
+df_episode_info = clean_poll_vote(df_episode_info)
+df_episode_info.head()
+
+# %%
+episode_info
+# %%
