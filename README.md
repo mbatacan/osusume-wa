@@ -1,5 +1,5 @@
 ### 🚧 Under construction 🚧
-# anime-ranking-app
+# [anime-ranking-app](https://osusume-wa.streamlit.app/)
 Feature 1: NLP
 - figure out pulling episode reviews data for one anime (one piece)
 - perform sentiment analysis on reviews
